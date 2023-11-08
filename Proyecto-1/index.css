@@ -1,0 +1,352 @@
+/* selector universal, se identifca por el caracter * */
+/* se comporta de dos maneras
+    globalmente
+    localmente
+*/
+
+* {
+    /* afecta a todo el documento */
+    margin: 0;
+}
+
+body {
+    margin: 8px 16px 8px 16px; /* top right bottom left */
+    /* margin-top: 8px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    margin-left: 16px; */
+}
+
+/* selector de id se identifica por el caracter # */
+
+#container {
+    /* asignación de estilos */
+    /* nombrepropiedad : valorpropiedad ; */
+    /* background-color: rgb(98, 45, 9); red, green, blue - 0 a 255 */
+    background-color: gray; /*hexadecimales*/
+    font-size: 24px;
+    display: inline-block;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 100vh;
+  }
+
+  .item {
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item2-2 {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+
+  .sub-item {
+    border: 1px solid #ccc;
+  }
+
+  .iframe-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+
+/* selector de tag */
+
+/* nav div {
+    display: inline-block;
+} */
+
+/* selector universal anidado */
+
+nav {
+    padding: 4px;/* top right bottom left */
+    display: flex;
+    column-gap: 16px;
+    justify-content: space-evenly;
+}
+
+nav * {
+    /* afectar a cualquier elemento dentro de la nav */
+    display: inline-block;
+    margin: 0 2px;/* top right bottom left */
+    background-color: bisque;
+}
+
+nav *:hover {
+    /* afectar a cualquier elemento dentro de la nav */
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+/* selector de clase, se identifica por caracter . */
+/* .option {
+    display: inline-block;
+} */
+
+.alineado {
+    order: 4;
+}
+
+.segundo {
+    order: -1;
+}
+
+/* Maximo 600px - Color de fondo aqua */
+@media (max-width: 600px) {
+  body {
+    background-color: aqua;
+  }
+}
+
+/* Maximo 800px - Desaparecer la navbar 
+@media (max-width: 800px) {
+  header {
+    display: none;
+  }
+}
+/* Mayor a 1200px - Color de fondo beige */
+@media (min-width: 1200px) {
+  body {
+    background-color: beige;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    background-color: aqua;
+  }
+
+  nav {
+    text-align: center;
+    border: none;
+  }
+
+  .option {
+    margin-right: 8px;
+  }
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: 16px; /* Ajusta el tamaño de fuente según sea necesario */
+  line-height: 1.5; /* Ajusta el espaciado entre líneas según sea necesario */
+}
+
+
+/* Para tabletas - Ancho entre 601px y 1024px 
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    
+  }
+
+  nav {
+    
+  }
+}
+
+/* Maximo 600px - Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+  section button {
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+/* Para tabletas - Ancho entre 601px y 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  section button {
+    display: inline-block;
+    margin-right: 8px;
+    width: auto;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+/* Mayor a 1200px - Estilos para escritorio */
+@media (min-width: 1200px) {
+  section button {
+    display: inline-block;
+    margin-right: 16px;
+    width: auto;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+
+/* Estilos para todos los breakpoints */
+.form-container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form h4 {
+  font-size: 20px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+form input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Maximo 600px - Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+  .form-container {
+    max-width: 280px; /* Tamaño reducido para dispositivos móviles */
+  }
+}
+
+/* Para tabletas - Ancho entre 601px y 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .form-container {
+    max-width: 380px; /* Tamaño reducido para tabletas */
+  }
+}
+
+/* Mayor a 1200px - Estilos para escritorio */
+@media (min-width: 1200px) {
+  .form-container {
+    max-width: 480px; /* Tamaño reducido para escritorio */
+  }
+}
+
+
+
+
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+  padding: 15px;
+}
+
+.form-column {
+  background-color: #f0f0f0; /* Puedes cambiar el color de fondo según tu preferencia */
+}
+
+.image-column {
+  background-color: #e0e0e0; /* Puedes cambiar el color de fondo según tu preferencia */
+}
+
+form {
+  margin: 0;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="button"] {
+  background-color: #4caf50; /* Puedes cambiar el color del botón según tu preferencia */
+  color: white;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 15px;
+  background-color: #f0f0f0; /* Puedes cambiar el color de fondo según tu preferencia */
+  border: 1px solid #ccc; /* Puedes agregar bordes según tu preferencia */
+}
+
+
+
