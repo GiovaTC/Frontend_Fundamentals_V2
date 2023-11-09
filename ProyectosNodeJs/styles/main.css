@@ -1,0 +1,102 @@
+body {
+  font-size: 18px;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+nav {
+  background-color: #6c757d;
+}
+nav ul {
+  list-style: none;
+}
+nav .nav-item {
+  margin-right: 10px;
+}
+nav .nav-link {
+  color: white;
+}
+nav .nav-link:hover {
+  color: #28a745;
+}
+
+main.container, section.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  margin-bottom: 20px;
+}
+
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: auto;
+}
+.form-container label {
+  margin-top: 10px;
+}
+.form-container input.form-control {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form-container input[type=button].btn-primary {
+  width: 100%;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-3 {
+  width: 25%;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,121 @@
+// Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$font-size: 18px;
+
+// Estilos generales
+body {
+  font-size: $font-size;
+}
+
+// Estilos para el encabezado
+header {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+// Estilos para la barra de navegación
+nav {
+  background-color: $secondary-color;
+  ul {
+    list-style: none;
+  }
+
+  .nav-item {
+    margin-right: 10px;
+  }
+
+  .nav-link {
+    color: white;
+
+    &:hover {
+      color: $success-color;
+    }
+  }
+}
+
+// Estilos para las secciones
+main.container, section.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+// Estilos para las imágenes
+.image-container {
+  margin-bottom: 20px;
+}
+
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+// Estilos para los botones
+.btn-primary {
+  background-color: $primary-color;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+  color: white;
+}
+
+.btn-success {
+  background-color: $success-color;
+  color: white;
+}
+
+// Estilos para el formulario
+.form-container {
+  max-width: 400px;
+  margin: auto;
+
+  label {
+    margin-top: 10px;
+  }
+
+  input.form-control {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  input[type="button"].btn-primary {
+    width: 100%;
+  }
+}
+
+// Estilos para las columnas
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-3 {
+  width: 25%;
+}
+
+// Estilos para el video
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
